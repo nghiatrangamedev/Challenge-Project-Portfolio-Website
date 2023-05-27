@@ -82,20 +82,79 @@ li a:active {
     color: #fff;
 }
 
+/* Main */
 /* Contact */
 #contact {
     padding: 20px;
-    height: 100vh;
+    height: 80vh;
 
+    background-image: url("../images/contact-me-background.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact section {
+    display: inline-block;
+    width: 50%;
+}
+
+#contact img {
+    max-width: 100%;
 }
 
 #contact h1 {
     font-family: 'Merienda', cursive;
-    font-size: 6rem;
-    color: #fff;
+    font-size: 8rem;
     text-align: center;
 }
+
+#contact a, #contact a:visited {
+    color: #434343;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 6rem;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 100px;
+}
+
+#contact a:hover {
+    background: #0BF893;
+}
+
+#contact a:active {
+    color: #fff;
+}
+
+/* Mobile & Tablet */
+@media only screen and (max-width: 1024px) {
+    #contact h1 , #contact a{
+        font-size: 4rem;
+    }
+
+    #contact a {
+        margin: 0 50px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1B262C;
+    color: #EAD5AA;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+

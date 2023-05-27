@@ -79,6 +79,10 @@ header {
         width: 70%;
     }
 
+    .nav-item {
+        visibility: hidden;
+    }
+
     nav ul li a {
         font-size: 1.2rem;
     }
@@ -123,6 +127,13 @@ li a:hover {
 
 li a:active {
     color: #fff;
+}
+
+#bar-button:hover {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
 }
 
 /* Main */
@@ -203,6 +214,18 @@ li a:active {
 
 /* #introduce Desktop */
 @media only screen and (min-width: 1025px) {
+    #introduce {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #introduce .logo {
+        height: 200px;
+    }
+
     #introduce p {
         width: 60%;
         margin: 20px auto;
@@ -250,6 +273,7 @@ li a:active {
 .fa-brands {
     margin-top: 20px;
     font-size: 3rem;
+    border-radius: 50%;
 }
 
 /* Footer */
