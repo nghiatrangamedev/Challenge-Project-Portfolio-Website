@@ -1,0 +1,247 @@
+/* Universal */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html */
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: #434343;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #70D6F9;
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+h2, h3 {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Merienda', cursive;
+    color: #0F4C75;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* Mobile and Table */
+@media only screen and (max-width: 1024px) {
+    h2, h3 {
+        margin: 20px 10px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Logo */
+.logo {
+    display: block;
+    height: 120px;
+    width: auto;
+}
+
+/* nav Mobile & Tablet */
+@media only screen and (max-width: 1024px) {
+    nav {
+        width: 70%;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Nav Desktop */
+@media only screen and (min-width: 1025px) {
+    nav {
+        width: 50%;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Nav's list */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    color: #F99370;
+}
+
+li a:hover {
+    padding: 10px;
+    border: 1px solid #F99370;
+    border-radius: 10px;
+}
+
+li a:active {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Main */
+/* About Me */
+#about-me {
+    height: 100vh;
+    border-bottom: 1px solid #fff;
+    
+    background-image: url("../images/about-me-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#about-me article {
+    position: relative;
+    bottom: 40px;
+    padding: 20px;
+}
+
+#about-me h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 6rem;
+    color: #F88B53;
+}
+
+#about-me p {
+    font-size: 3rem;
+    color: #F8895C;
+}
+
+/* Mobile & Table */
+@media only screen and (max-width: 1024px) {
+    #about-me h1 {
+        font-size: 5rem;
+    }
+
+    #about-me p {
+        font-size: 2rem;
+    }
+}
+
+/* Projects */
+#projects {
+    text-align: center;
+}
+
+#projects .logo {
+    margin: 20px auto
+}
+
+/* Projects #introduce */
+#introduce {
+    padding: 20px;
+    background-color: #fffafa;
+}
+
+#introduce a, #introduce a:visited {
+    color: #A2BACA;
+    text-decoration: underline;
+}
+
+#introduce a:hover {
+    color: #434343;
+    cursor: pointer;
+}
+
+#introduce a:active {
+    color: #ff0000;
+}
+
+/* #introduce Desktop */
+@media only screen and (min-width: 1025px) {
+    #introduce p {
+        width: 60%;
+        margin: 20px auto;
+    }
+}
+
+/* Projects .project */
+.project {
+    padding: 40px;
+    color: #fff;
+}
+
+.project h2 {
+    color: #fff;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+#pomodoro-page {
+    background-color: #31355B;
+}
+
+#calculator-page {
+    background-color: #F8C687;
+}
+
+#company-page {
+    background-color: #7DCC93;
+}
+
+/* Skills */
+#skills {
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: #fffafa;
+}
+
+#skills article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
