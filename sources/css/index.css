@@ -246,17 +246,71 @@ li a:active {
     max-width: 100%;
 }
 
+/* Project .link-button */
+.link-button {
+    color: #fff;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 20px 100px;
+    margin-top: 30px;
+    
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+
+/* Specific project */
+/* Pomodoro Page */
 #pomodoro-page {
     background-color: #31355B;
 }
 
+#pomodoro-page a {
+    background-color: #8187bb;
+}
+
+#pomodoro-page a:hover {
+    background-color: #6069bb;
+}
+
+#pomodoro-page a:active {
+    background-color: #3441bb;
+}
+
+/* Calculator Page */
 #calculator-page {
     background-color: #F8C687;
 }
 
+#calculator-page a {
+    background-color: #67a7f5;
+}
+
+#calculator-page a:hover {
+    background-color: #4995f3;
+}
+
+#calculator-page a:active {
+    background-color: #2b88fa;
+}
+
+/* Company Page */
 #company-page {
     background-color: #7DCC93;
 }
+
+#company-page a {
+    background-color: #c953a7;
+}
+
+#company-page a:hover {
+    background-color: #c72e9c;
+}
+
+#company-page a:active {
+    background-color: #c91395;
+}
+
 
 /* Skills */
 #skills {
